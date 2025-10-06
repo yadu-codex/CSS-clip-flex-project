@@ -1,0 +1,345 @@
+*{
+margin:0;
+padding:0;
+}
+html,body{
+width:100%;
+height:100%;
+box-sizing: border-box;
+}
+@font-face {
+    font-family: moneterey;
+    src: url(MontereyFLF.ttf);
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    /* justify-content:space-between;
+    align-items: center; */
+    /* flex-wrap: wrap;
+    padding-bottom: 30px; */
+    box-sizing: border-box;
+}
+h1{
+    margin-left: 50px;
+    height: 70px;
+    width: 40%;
+    font-family: moneterey;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+   
+}
+
+#options{
+   
+    height: 80px;
+    width: 35%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding-right: 50px;
+}
+
+.nav #menu{
+     margin-right: 100px;
+     margin-left: 200px;
+    height: 40px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+#menu a{   
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+#menu a:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.501);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+#icon{
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+#icon i:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+}
+#icon i{
+    cursor: pointer;
+}
+.main{
+    
+    width: 100%;
+    height: 600px;
+    background: url("https://images.unsplash.com/photo-1593180318059-c5eb656304d5?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; */
+    /* gap: 20px; */
+    text-align: left ;
+    overflow: hidden;
+
+}
+#content{
+    height: 400px;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    gap: 20px;
+}
+#content > h1{
+    height: 80px;
+    width: 1000px;
+    padding: 10px 20px;
+    font-size: 40px;
+    font-weight: 600;
+   
+    color: rgb(240, 240, 240);
+    background: rgba(0, 0, 0, 0.103);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.main p{
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-left: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: rgb(240, 240, 240);
+    width: 600px;
+    height: 100px;
+}
+#buttons{
+    padding: 50px 50px;
+    /* margin-left: 70px;
+    margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#explore,#create{ 
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family:" system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+    border: none;
+}
+#explore:hover,#create:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+#btw{
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#btw h2{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: moneterey;
+}
+#btw p{
+    font-size: 20px;
+    font-weight: 200;
+    width: 500px;
+}
+#view{
+    height: 50px;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#view:hover{
+    cursor: pointer;
+    background: rgb(252, 252, 252);
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.main2{
+    width: 100%;
+    height: 600px;
+    background-image: url("https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 100px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+ #card{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 0 20px rgba(255, 255, 255, 0.456);
+    position: relative;
+}
+
+#card1{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 30px;
+    background:rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.43);
+    position: relative;
+    color: wheat;
+}
+
+#card2{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 30px;
+    background:rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.456);
+    position: relative;
+    color: wheat;
+}
+
+
+.image{
+    margin-top: 30px;
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+    
+}
+.image:hover{
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+#Time{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 200;
+    object-fit: cover;
+}
+#price{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+}
+#price i{
+    font-size: 20px;
+    font-weight: 600;
+}
+#price h5{
+    display: inline;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+#offer{
+    height: 70px;
+    width: 140px;
+    position: absolute;
+    top:2%;
+    left:-1%;
+    background-color: white;
+    clip-path: polygon(4% 35%, 100% 35%, 100% 0%, 0% 1%, 0% 42%);
+    overflow: hidden;
+}
+#offer h2{
+    padding-left: 30px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
